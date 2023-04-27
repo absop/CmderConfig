@@ -1,0 +1,3 @@
+D:/Programs/Cmder/config/cmder_prompt_config.lua
+D:/Programs/Msys64/etc/bash.bashrc
+D:/Programs/Msys64/etc/profile.d/aliases.sh
