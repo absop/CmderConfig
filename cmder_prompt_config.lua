@@ -68,7 +68,7 @@ function custom_prompt()
   -- [\x1b[1;30;40m{time}\x1b[0m]
   -- prompt = string.gsub(prompt, "{time}", os.date("%x %X"))
   cwd = cwd:match("^.+[/\\](.+)$")
-  prompt = string.gsub(prompt, "{cwd}", cwd)
+  prompt = string.gsub(prompt, "{cwd}", cwd) or cwd:match("^([C-Z]:)[/\\]")
   prompt = string.gsub(prompt, "{username}", username)
   clink.prompt.value = prompt;
 end
